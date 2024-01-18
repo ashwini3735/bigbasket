@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class bigBasketPrasad {
+public class bigBasketPrasadTest {
 
 	@Test
 	public void bigBasketTest() throws Throwable
@@ -33,11 +33,11 @@ public class bigBasketPrasad {
 		
 		for (int i = 0; i <allname.size() ; i++) {
 		    String melon = allname.get(i).getText();
-			FileInputStream fi = new FileInputStream("./src/test/resources//bigBasket.xlsx");
+			FileInputStream fi = new FileInputStream("./src/test/resources//bigBasketPrasad.xlsx");
 			Workbook wb = WorkbookFactory.create(fi);
 			Sheet sh = wb.getSheet("Sheet1");
 			sh.createRow(i).createCell(0).setCellValue(melon);
-			FileOutputStream fout= new FileOutputStream("./src/test/resources//bigBasket.xlsx");
+			FileOutputStream fout= new FileOutputStream("./src/test/resources//bigBasketPrasad.xlsx");
 			wb.write(fout);
 			wb.close();
 		}
