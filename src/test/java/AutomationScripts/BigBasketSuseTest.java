@@ -17,7 +17,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class BigBasketSuse {
+public class BigBasketSuseTest {
 	@Test
 	public void watermelon() throws EncryptedDocumentException, IOException, InterruptedException
 	{
