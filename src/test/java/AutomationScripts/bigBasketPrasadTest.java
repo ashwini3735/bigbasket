@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class bigBasketPrasad {
+public class bigBasketPrasadTest {
 
 	@Test
 	public void bigBasketTest() throws Throwable
